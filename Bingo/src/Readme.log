@@ -1,0 +1,48 @@
+This project Includes: 
+1. Code
+2. Logic
+3. Constraint
+4. Flowchart
+
+1. Code is in the org.bingo.main package.
+
+	- Program will be runnable using Housie.java File, which includes main method
+	- This code includes 2 objects.
+	1. Player object -> To create instance of player and associate ticket with it. Also contains functions to check winning Combination
+	2. Ticket object -> To create instance of ticket and function to generate random numbers in ticket.
+	-> Necessary comments
+
+2. Logic:
+
+	-> User will be able to
+		- Give the range of numbers to generate random numbers
+		- Give Number of Players
+		- Give size of ticket
+		- Give maximum number in each row
+		- First N number to winning combination
+	-> Loop over each players
+		- Create a ticket
+		- Fill up ticket with random numbers
+		- Create player and associate player with the created ticket
+	-> Caller will call the number
+	-> Beginning of the game full housie flag set as false
+	-> caller will call the number (random number) and check in list if exists or not
+	-> if not
+		- iterate over each player and check any of given winning combination
+	-> if yes
+		- continue and generate another number which wasn't called before
+	-> Declare winning type.
+
+3. Following constraints are consider in the project:
+	-> Based on given number of players, they will be assigned as playerId(unique)
+	-> Tickets are generated with random numbers and empty space as 0.(each ticket has a unique ticketId).
+	-> While calling the number (during game), 0 can not be valid number as housie starts from 1 ..n.
+	-> Once any player win any of the winning combination (EarlyN, TopLine), then other player can't win the same.
+	-> If there is a full housie, game will stop.
+
+4. Flowchart
+ 
+	-> Flowchart is under Flowchart folder and it contains image. 
+
+
+	
